@@ -1,10 +1,39 @@
 {
 	"name": "Icelighter",
+	"type": "dark",
+	"semanticTokenColors": {
+		"variable": {
+			"foreground": "#f07178"
+		},
+		"parameter": {
+			"foreground": "#F78C6C"
+		}
+	},
 	"colors": {
 		"editor.background": "#1A1A2E",
 		"editor.foreground": "#eeffff",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"activityBar.background": "#1a1a2e",
+		"activityBar.foreground": "#FFCB6B",
+		"activityBar.inactiveForeground": "#B2CCD6",
+		"activityBarBadge.background": "#C792EA",
+		"activityBarBadge.foreground": "#FFFFFF",
+		"sideBar.background": "#212136",
+		"sideBar.foreground": "#B2CCD6",
+		"sideBarSectionHeader.foreground": "#FFCB6B",
+		"list.inactiveSelectionForeground": "#EEFFFF",
+		"list.activeSelectionForeground": "#FFCB6B",
+		"editorGroupHeader.tabsBackground": "#212136",
+		"tab.activeBackground": "#1a1a2e",
+		"tab.activeForeground": "#FFCB6B",
+		"tab.inactiveBackground": "#212136",
+		"tab.inactiveForeground": "#B2CCD6",
+		"titleBar.activeBackground": "#212136",
+		"titleBar.activeForeground": "#EEFFFF",
+		"statusBar.background": "#5f3c83",
+		"statusBar.foreground": "#EEFFFF",
+		"statusBar.border": "#1A1A2E",
+		"statusBar.debuggingBackground": "#764ba7",
+		"statusBar.debuggingForeground": "#FFFFFF"
 	},
 	"tokenColors": [
 		{
@@ -16,16 +45,6 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#546E7A"
-			}
-		},
-		{
-			"name": "Variables",
-			"scope": [
-				"variable",
-				"string constant.other.placeholder"
-			],
-			"settings": {
-				"foreground": "#FFC06A"
 			}
 		},
 		{
@@ -103,25 +122,6 @@
 			}
 		},
 		{
-			"name": "Block Level Variables",
-			"scope": [
-				"meta.block variable.other"
-			],
-			"settings": {
-				"foreground": "#f07178"
-			}
-		},
-		{
-			"name": "Other Variable, String Link",
-			"scope": [
-				"support.other.variable",
-				"string.other.link"
-			],
-			"settings": {
-				"foreground": "#f07178"
-			}
-		},
-		{
 			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
 			"scope": [
 				"constant.numeric",
@@ -129,7 +129,6 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
 				"keyword.other.unit",
 				"keyword.other"
 			],
@@ -625,14 +624,34 @@
 			}
 		},
 		{
-			"name": "Type Hints and Class Names (Structural)",
+			"name": "Ultimate Python Variable Fix",
 			"scope": [
-				"entity.name.type",
-				"storage.type.hint",
-				"support.type"
+				// Скоупы для переменных в Python
+				"variable.other.readwrite.instance.python",
+				"variable.other.assignment.python",
+				"meta.indexed-name.python",
+				"variable.other.loop.python",
+				"variable.parameter",
+				"variable.language",
+				"variable.other",
+				"identifier",
+				"meta.function-call variable",
+				// Общие скоупы (на случай, если грамматика использует их)
+				"variable",
+				"source.python variable",
+				"source.python identifier"
 			],
 			"settings": {
-				"foreground": "#79C0FF"
+				"foreground": "#f07178" // Ваш коралловый цвет
+			}
+		},
+		{
+			"name": "Force All Python Variables",
+			"scope": [
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#f07178"
 			}
 		}
 	]
