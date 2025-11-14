@@ -1,0 +1,21 @@
+{
+  "name": "fire-force-theme-",
+  "displayName": "Fire Force theme ",
+  "description": "a dark theme inspired by the fire force anime ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Icelighter",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Icelighter-color-theme.json"
+      }
+    ]
+  }
+}
