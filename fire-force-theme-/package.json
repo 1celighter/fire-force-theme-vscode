@@ -3,6 +3,10 @@
   "displayName": "Fire Force theme ",
   "description": "a dark theme inspired by the fire force anime ",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1celighter/fire-force-theme-vscode.git"
+  },
   "engines": {
     "vscode": "^1.106.0"
   },
